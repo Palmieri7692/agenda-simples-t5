@@ -66,7 +66,8 @@ namespace agenda_simples_t5
             saida += String.Format("{0}-{1}-{2}", 
                 Telefone.Substring(0, 1), 
                 Telefone.Substring(2, 6), 
-                Telefone.Substring(7, 10)); 
+                Telefone.Substring(7, 10));
+            return saída;
         }
     }
-}
+}   

@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace agenda_simples_t5
 {
-    public partial class Form1 : Form
+    public partial class txtSobrenome : Form
     {
-        public Form1()
+        public txtSobrenome()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void buttonbntAddContato_Click(object sender, EventArgs e)
+        {
+            Contato objetoContato = new Contato();
+            LstContatos.Items. Add(objetoContato.ToString());
         }
     }
 }
